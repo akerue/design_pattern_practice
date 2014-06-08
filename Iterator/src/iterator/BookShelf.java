@@ -3,6 +3,12 @@ package iterator;
 public class BookShelf implements Aggregate{
 	private Book[] books;
 	private int last = 0;
+
+	// Add default constractor
+	public BookShelf() {
+		this.books = new Book[10];
+	}
+	
 	public BookShelf(int maxsize) {
 		this.books = new Book[maxsize];
 	}
